@@ -1,0 +1,86 @@
+2026-07-20 - Who Needs a Job? DPRK ClickFake Interview Campaign Drops PylangGhost and GolangGhost RATs
+
+Research URL: https://socradar.io/blog/dprk-clickfake-pylangghost-golangghost-rats/
+
+Key Points
+- Famous Chollima (aka Wagemole) is a North Korean-aligned threat actor that has been highly active through the Contagious Interview and the latest ClickFake Interview campaigns.
+- For ClickFake Interview the actors are creating fraudulent companies or impersonating known ones in the crypto industry, and reach out to targets on social media (e.g., LinkedIn), inviting them to ClickFix empowered fake skill assessments.
+- Their ClickFix panels incorporate gating, tailored questions based on advertised roles, psychological pressure to act fast, video recording, and social engineering that pushes targets to run malicious commands through fake camera errors.
+- The final payloads target both Windows, by deploying PylangGhost RAT, and macOS, by deploying GolangGhost RAT alongside a credential-harvesting SwiftUI application.
+- PylangGhost and GolangGhost consist of six interconnected modules: a main orchestrator, a configuration holder, an archive helper, a command launcher, a C2 component, and a stealer.
+- Both payload chains download the runtimes needed to run in victim environments: Python’s interpreter for PylangGhost and Golang’s compiler for GolangGhost.
+- In the latest variation of PylangGhost, the attackers also compiled their payloads as Python dynamic modules with Nuitka to further complicate detection and analysis.
+- Famous Chollima actors register multiple domains for their fake skill assessments, predominantly on Hostinger and NameCheap registrars, emphasizing speed and scale, rather than operational security and infrastructure resilience.
+
+IOCs:
+IP Addresses:
+95.216.92[.]207
+
+URLs:
+hxxp[://]nvidiadriver[.]net/verv1432/drivers/intel-driver-xd7d[.]zip
+hxxp[://]95[.]216[.]92[.]207:8080/
+hxxp[://]95.216.92[.]207:8080/gettext
+
+Domains:
+paxos-apply[.]com
+cameradriverupdates[.]com
+highmatch[.]pro
+highmatch[.]cloud
+tailora[.]org
+breezyhr[.]us
+rolevia[.]us
+medincahub[.]com
+cincopa[.]org
+knockri[.]us
+spiralboard[.]com
+kaltura[.]studio
+paxos-video-interviews[.]com
+videohirepro[.]com
+evaluateproficiency[.]com
+paxos-video-recording[.]com
+video-hiring[.]com
+vervoe[.]app
+canditech[.]us
+hirvexo[.]com
+hiring-you[.]com
+gumlet[.]us
+survicate[.]us
+ziggeo[.]tech
+insighboard[.]com
+zavnia[.]us
+mettl[.]us
+tecmlny[.]com
+zynoracreative[.]com
+workbright[.]us
+me-c0h.pages[.]dev
+evaluza[.]com
+evaluino[.]com
+nvidiadriver[.]net
+
+Hashes:
+96ce1b7f2026dfd3dbb806c246c27ce3b105a9e78482956fae42258980425cd0
+b9a8ae1e6d2c875e21c77f3b9255ca0b3b0b3e0addbb2c3c865e5b95eb734d22
+c466170079e4b9e26e41a25ca45ff8a7f6cc9b3e9e7f2beda99f3dd042e72c1b
+164e322d6fbc62e254d73583acd7f39444c884d3f5e6a5d27db143fc25bc88b3
+f6669bd504ce6b0e303be7ee47f2ebbc062989c88c41f0a3f436044a24869798
+50ffce607867d8fa8eaf6ef5cd25a3c0e7e4415e881b9e55c04a67bcddb74fdf
+c8075bbff748096e1c6a1ea0aa67bb6762fdd7551427a12425b35b94c1f1ecf2
+282b9bc318ad1234cbd1b86424b784299b8be31545802a7c6b751166b814b990
+17832aa629524ef6e8d8d6e9b6b902a8d324b559e3c36dbd0e221ab1690be871
+0ca62fe52a895bad73a14f1a455e1bead18b8c256749d727c2678924298f7ee8
+617779f417c1850c08ed55ba49e2317aed0e1e911fca8bf8f348189ee4ebdb97
+e59683f2ab7ba05da5443a153aee221af08ba884461f74dd8b114c0d10febbeb
+e337dfb06e08ac8ceb47728b50de006ef82f5e61fa245494210a362bab15859f
+f53567c1a8885925393a1771cded2ff2c8ef4ab38da1bf97d36f153f81f72e80
+95983760b571631e1da0f52f51c7a274f2a34e44de5e3d10cadcf8b30edf959c
+6110ea43d734a296a8e5676192c56cdbdad11c94c3eecda7b55a4672e16d35d4
+6295839b6c9414d9cd0f2402f4cd72e219f75cc4dfac720cec297fddc4f20ff2
+6850cdb307fc72e052719939efbf705beb8d50775b260a18aff0adba536d7dea
+4387b79045065622e7fd643b65d85998f092c4b32e53633d36bd7ef46181cbe2
+0827606854b6fd7fa73f13f2e453d9720d79c63e89308cfed0b577a16d84bccd
+756846dfa3c258807b6962bb66373a543aa6b4ba0a35ffc4a526e4b07a84d9dc
+319adf187bce5bd85dbb5b06f99ce78baa807af590feaed44a6f932d4d5b9003
+d1934fdd449b6e8124b632f680cbe6893ac39e740559b1882641204040c70a99
+47a3ce02388c845e5f1ed8f4d3673e2c99a643b88d3f2fa06cbfe0c78502264d
+1cee591c63d7fd8ee963abb29789c3ee41eb42cc77470964a00ea15be4b51341
+9e465904503815c27397e082fd5ca8eb30d99d8d256c6a0949696d1830c8bb53
