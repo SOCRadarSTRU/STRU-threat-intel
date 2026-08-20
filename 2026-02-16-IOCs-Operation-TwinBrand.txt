@@ -1,0 +1,34 @@
+2026-02-16 - Operation TwinBrand: How Fortune 500 Brands Are Weaponized for Credential Theft
+
+Research URL: https://socradar.io/resources/whitepapers/operation-doppelbrand-fortune-500-access/
+
+Key Points
+- More than 150 domains linked to GS7 campaigns across multiple TLDs
+- Brand impersonation targeting Fortune 500 financial and technology firms
+- Credential exfiltration through Telegram bots with structured victim profiling
+- Use of legitimate RMM tools (LogMeIn, AnyDesk, Atera) for stealthy persistence
+- Infrastructure pivoting via JARM fingerprints, SSL timing, and naming conventions
+- Bitcoin wallet tracing revealing campaign monetization patterns
+
+IOCs:
+
+Domains:
+media-auth[.]com
+mail[.]media-auth[.]com
+rss[.]media-auth[.]com
+tyd[.]media-auth[.]com
+dfr[.]media-auth[.]com
+www[.]media-auth[.]com
+gs7[.]online
+cuofco-auth[.]gs7[.]online
+gscf[.]online
+remote[.]gscf[.]online 
+
+Hashes:
+8EB5D9454291BB03137DD3DECA4EEDAB
+C1AC8D6D010E12A3FABE22BAAB6E6CC5
+E1142894A4EE1F4D62034707F329EBA7
+8A2565C351BAE3A5B6FFAA9160E0360A
+3879b5ce599a31e9b9a95e4ade06e3e6
+A8DF6397664FA70106943BC21BFF81F9
+F7DAF26EFBEF7199C226DC2729F26E6E
