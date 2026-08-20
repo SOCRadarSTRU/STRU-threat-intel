@@ -1,0 +1,58 @@
+2025-11-03 - Behind the Bulwark: Anatomy of an EDR/AV Evasion Toolkit
+
+Research URL: https://socradar.io/resources/whitepapers/behind-the-bulwark-anatomy-of-an-edr-av-evasion-toolkit/
+
+Key Points
+- How Bulwark’s architecture enables real-time binary transformation and multi-AV evasion
+- The Deep and Dark Web platforms promoting and distributing the toolkit
+- Insights from creator and affiliate interviews revealing internal operations
+- Real-world test results against leading AV and EDR products
+- Correlations linking Bulwark to credential stealers and loader services
+
+IOCs:
+URLs:
+https://database[.]forum/index.html
+https://t[.]me/rootdatabase
+https://t[.]me/dbroot
+https://t[.]me/sup_database
+https://t[.]me/+tqX1gmdIfikxMDM6
+https://usrlnk[.]io/auracorp 
+https://t[.]me/i7343p2js9uzbozx
+https://t[.]me/+PPVWLEojMQxhMWUx
+https://t[.]me/protection_adm
+https://t[.]me/protection_club
+https://t[.]me/+O54K8aj91OVlNTMy
+https://av-lab[.]pro/ 
+https://bulwark[.]pro/  
+
+Domains:
+softytoys[.]shop
+auracorp[.]cc
+secondhandcloth[.]shop
+armydevice[.]shop
+opencamping[.]shop
+glossmagazine[.]shop
+balancedassetline[.]xyz
+radioengineering[.]shop
+secondhandcloth[.]shop
+luxgames[.]shop
+cartdetails[.]shop
+softytoys[.]shop
+glossmagazine[.]shop
+armydevice[.]shop
+fancycloud[.]shop
+clockhouse[.]shop
+goxq6gj4nplseo3ziivgpht24skew55sly5zazldix7bb3pfeubxt2id[.]onion 
+
+Hashes:
+2D33509252FDEB9BF8D49F168E34CA938D6BDC2730695B7394FAF5D8F785D27D
+e91f79999728911847313f70ec1ac76ff5965b43c929bc4db7c2f55d62f353d2
+BAC52FFC8072893FF26CDBF1DF1ECBCBB1762DED80249D3C9D420F62ED0DC202
+2c4b8be34028c43d6b251fba60d75b62d2b1b70373f8eb8104205e67471bc32d
+a73f7ff2df033591c1821fc5a74d435d5718486a3fcd9030ac8b046abef61ed7
+4f19aec7ae80d0595d0299470900415434ecd3b1fc03f495b69617e6489f359d
+db3c02d40b0ec5cc6564d253ecedbb7bac08dfae7513fd9642c2ea131dcda7b7
+f2607505337d23ecee2017a24463d00dba41a127db02ec4b347e10dcdeafe43b
+8f9e60a5a448126c684c2f53b6d397d751dbc6a9d005d8365ed3c4e38868f96e
+bf60ddab670c7ed28632ddbbb2e871be853a51003441abb5e79641515df70217
+ddd9869711d8310b87f4fcd44329c785d1a34fbe245fa644e121829c152fc88c
