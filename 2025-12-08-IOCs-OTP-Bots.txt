@@ -1,0 +1,10 @@
+2025-12-08 - Inside the Industrialized World of OTP Bots – The Human Exploit Factory
+
+Research URL: https://socradar.io/resources/whitepapers/otp-bots-fraud-social-engineering/
+
+Key Points
+- Analysis of real OTP bot panels, voice scams, and targeted attack flows
+- Telegram as the central marketplace for real-time fraud automation
+- How stealer logs and phishing kits supercharge OTP bot success rates
+- Sector focus: Banking, telecom, e-commerce, and crypto platforms
+- Defensive insights: How to harden MFA and train for social engineering threats
