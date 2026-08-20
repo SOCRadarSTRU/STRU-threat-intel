@@ -12,7 +12,6 @@ Key Points
 - The kit presents consistent fingerprints across all detected variants, enabling correlation of separate campaigns as part of the same operation.
 
 IOCs:
-
 Domains:
 google-file-document[.]github[.]io
 file-712[.]github[.]io
