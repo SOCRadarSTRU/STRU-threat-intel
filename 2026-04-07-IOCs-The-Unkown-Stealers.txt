@@ -12,7 +12,7 @@ Key Points
 IOCs:
 
 Domains:
-citrusshop.icu
+citrusshop[.]icu
 
 Hashes:
 0152914D34A70D620D711A5CF205D529
