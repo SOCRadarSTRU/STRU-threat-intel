@@ -10,7 +10,6 @@ Key Points
 - Technical insights into capabilities, targeted data, and post-infection impact
 
 IOCs:
-
 Domains:
 citrusshop[.]icu
 
