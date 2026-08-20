@@ -1,0 +1,49 @@
+2026-06-12 - New Data Extortion Group “Pink” Goes Big Game Hunting With Evasive Phishing Kits
+
+Research URL: https://socradar.io/blog/pink-data-extortion-group-phishing-kits/
+
+Key Points
+- Pink is a newly tracked group, which leverages voice phishing to impersonate IT personnel and capture credentials for subsequent data exfiltration.
+- The actor is highly likely Com-affiliated (an international English-speaking multi cybercriminal network) and based on infrastructure and technique overlap, Pink is likely considered a rebrand of BlackFile/Redacted group.
+- Their attack playbook was operational as of early March 2026 and continues to be active as of the time of reporting, whereas their DLS went live on May 31, 2026.
+- Their phishing kits target both Okta and Entra ID environments, include extreme vetting from sandboxes and researchers, real-time verification for the kits’ visibility and the capability to social engineer for passkey registrations and recovery words.
+- Pink utilises Cloudflare and DDoS-Guard for hosting and Tucows and Nicenic for domain registration, with their target’s name registered as a subdomain.
+- Their targeting strategy suggests Big Game Hunting with multiple high-net-worth United States ecosystems, especially around Healthcare, Technology, and Financial Services.
+
+IOCs:
+Domains:
+passkeyactivate[.]com
+activatepasskey[.]com
+setupssopasskey[.]com
+setupyoupasskey[.]com
+setupyourpasskey[.]com
+passkeysecuresetup[.]com
+activatemypasskey[.]com
+passkeyimplement[.]com
+passkeymanage[.]com
+secureauthpasskey[.]com
+passkeyrollout[.]com
+passkeyset[.]com
+createmypasskey[.]com
+addmypasskey[.]com
+setupmypasskey[.]com
+setupoktapasskey[.]com
+passkeyregister[.]com
+passkeyms[.]com
+passkeysetup[.]com
+passkeysupport[.]com
+newpasskey[.]com
+passkeycenter[.]com
+addoktapasskey[.]com
+passkeyportalsetup[.]com
+registerpasskey[.]com
+portalpasskey[.]com
+passkeyregistration[.]com
+passkeyokta[.]com
+enrollpasskey[.]com
+passkeyenrollment[.]com
+addpasskey[.]com
+deploypasskey[.]com
+passkeydeploy[.]com
+setpasskey[.]com
+passkeyadd[.]com
