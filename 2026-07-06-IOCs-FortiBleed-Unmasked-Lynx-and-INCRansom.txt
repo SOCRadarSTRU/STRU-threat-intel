@@ -1,0 +1,63 @@
+2026-07-06 - FortiBleed Unmasked: A Joint Operation by Lynx and INC Ransomware Groups
+
+Research URL: https://socradar.io/resources/whitepapers/fortibleed-unmasked-inside-the-lynx-and-inc-ransomware-operation/
+
+Key Points
+- Evidence linking the FortiBleed campaign to the Lynx and INC ransomware groups
+- Exclusive analysis of the operators, organizational hierarchy, and internal workflows behind the operation
+- How AI is being integrated into ransomware development, penetration testing, and vulnerability research
+- Technical profiling of the attackers, including infrastructure, tooling, and operational security practices
+- Victim targeting analysis, geographic focus, industry trends, MITRE ATT&CK mapping, and actionable indicators of compromise (IoCs)
+
+IOCs:
+IP Addresses:
+188[.]127[.]246[.]183
+213[.]171[.]17[.]74
+149[.]50[.]108[.]150
+62[.]60[.]131[.]246
+91[.]214[.]78[.]252
+193[.]221[.]200[.]2
+195[.]10[.]205[.]233
+91[.]148[.]237[.]63
+109[.]205[.]211[.]139
+213[.]21[.]239[.]65
+
+Domains:
+lynxad2seqpyu52lr5v7il4idasv23535a46s4bj65b3v7t5y6u5daqd[.]onion
+incbacg6bfwtrlzwdbqc55gsfl763s3twdtwhp27dzuik6s6rwdcityd[.]onion
+
+Hashes:
+08561b4778eddf654c7ac7de4e7ad2a7178173c68ca3bf4777de1c06a05eda4b
+3c86b25c5a9e638701975a7079f23aa99cac17039f822bd35951f00e863215fd
+b82ec17c3d33607131350dd925116578c19f30fbdb74706f0ae9c73d03945a37
+aa40be12da0fd1e98f3e91188dfee49dd8fd01ff171d4a15e88e506da9730880
+928e1773514e54106a816c5576d07b1d07c097f309c72fc4a5af96163bbeb11b
+928e1773514e54106a816c5576d07b1d07c097f309c72fc4a5af96163bbeb11b
+373f3d26fe6416e95e27b47a78f2a4b7414f8c93cee7ab80821a942928046569
+38353f95fff270f4e3a9d7add8c64666020dd668ce66e15969a736ec48cadc59
+874bcb1c3d050a5b5b333a2198f504fcb27927c2abdd43b07440188a380c52d5
+e583abf71169f2c7ae2c4e371f2e4774fc1de07c828eedb6491de2f14248a45c
+7c322680bcb71bee0c2796bda54321285b7384c6678f4540cd86df2a3da46bd6
+61deeae307f630628c2b6550b3846609bdf8d0faba09e459b7d709e26f42619f
+326a911d793e8ce27b77e335ef957e9f2d0a0c58ebe958f97f41f0f83093fd3d
+33e8cd263bfe68580fbd3548e59ce5104381852d8f8f061bbdab92d9dd1a9ab8
+2fe4711ffe7f010b628b17302c5303fa1bbcdad33a94d2a700b65b433fcf214d
+8e3f0c6044be7f9b01d7616540dbc0438343cbf8571af06b0b64cdcb558b2522
+dbf2663cae5f39d6116a73360764f63d9518673d5b3c12471b3f779333f866d2
+2e1b5ad44723cca12340a663c30041d568993701333a9d44ca4afa3d1ed649c8
+a77381fc373a18571196dfb3b9959e19f47035b610c79922e1e41f78e0ca7a8b
+7822990c1dd89e73dce409d01f5f7a0f4a97515d5386cacb9oe58ec5b205ae4d
+7df7e3f3cb7af9147c8703893fddceb979cbc96a0ca21cd8287c8dd606cf422e
+350ba5e95edadaf9fda830c15f0d9dae1666054217533ce783c7761e0e080e32
+e0a3f0bae16fe0c3937d2a78afef62d4237f6d29f4ed99e0336396be7952c66f
+2d3421d55dd7de4792d6ccc54f23c32ae81e424a1b96bf06f47d37f11300379a
+7b5e37edda6ec7b2f7b0ed2c3f944558b75d912a3eba34e3250efc366bea0ba6
+0f148a2bd47674b5e16f54faab658bc4613d345361fee659ecac2b4ba6922c8d
+3c6a1352401c78222a0eaffb16c2b3c13d2e5b082f9b147634e9d5612d769e0f
+c695335896a3465a34aa623aa955632e2c25ffd7b8494b9994b9a5572a70e33d
+
+TOX ID:
+D0C12DAC4797FFBD31A0BB57E227E141A39FA1F5A3A3FD4C3F15C02D7801DC5ED8C1BF08ACFD
+
+BTC Address:
+3A2THXCdqeeuBeDZEKTcwqykYABZsVoJxq
