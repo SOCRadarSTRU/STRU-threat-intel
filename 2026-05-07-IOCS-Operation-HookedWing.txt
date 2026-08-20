@@ -1,0 +1,29 @@
+2026-05-07 - Operation HookedWing: 4-Year Multi-Sector Phishing Campaign
+
+Research URL: https://socradar.io/blog/operation-hookedwing-4-year-phishing/
+
+Key Points
+- The first public documentation of this kit and campaign dates back to 2022, with no prior references found in any open sources consulted.
+- More than 4 years of continuous activity, with active infrastructure documented up to the time of publication.
+- Over 2,000 victims and more than 500 organizations were identified through analysis of recovered logs.
+- Multi-infrastructure and multi-vector approach involving abuse of legitimate hosting platforms, combined with the compromise of real corporate servers.
+- Use of github.io along with other platforms for landing pages, combined with dynamically injected PHP to load the form.
+- Deliberate targeting of key sectors such as Aviation, Government, Energy, and Critical Infrastructure
+- The kit presents consistent fingerprints across all detected variants, enabling correlation of separate campaigns as part of the same operation.
+
+IOCs:
+
+Domains:
+google-file-document[.]github[.]io
+file-712[.]github[.]io
+excel-file-document-2024[.]github[.]io
+pdf-viewer-online[.]github[.]io
+microsoft-file[.]github[.]io
+onedrive1-preview[.]github[.]io
+archived-document-file-2026[.]github[.]io
+bc1qxy2kgdygjrsqtzq2n0yrf2493[.]github[.]io
+e578eb340bebd4fe6q[.]github[.]io
+
+Hashes:
+632705d808341aedb0f8ee2f1fa1e2d0a765e6373379111cb86cb9438407cb25
+557ff81c43c01b13c9743be96a19090aebec31f7104d77ea578b779b99bf4e4e
