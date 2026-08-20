@@ -1,0 +1,24 @@
+2026-01-07 - NoName057(16) and DDoSia Project Analysis: Russia’s Most Persistent Hacktivist Operation
+
+Research URL: https://socradar.io/resources/whitepapers/noname05716-ddosia-political-hacktivism/
+
+Key Points
+- Rapid Technical Evolution: DDoSia has progressed through five major versions since 2022, each adding stronger evasion capabilities, including encrypted C2 communication, user-agent rotation, proxy use, and anti-analysis features.
+- Geopolitical Coordination: Attack campaigns consistently align with political events—such as NATO accessions, sanctions announcements, and military aid to Ukraine—typically launching within 24-72 hours of the triggering event.
+- Extensive Target Profile: Primary victims include government bodies (40-50% of attacks), financial institutions (17-23%), and media outlets (12-18%) across NATO member states and Ukraine supporters.
+- Multi-Platform Reach: The tool supports Windows, Linux, and Android systems, with Dockerized versions for easy VPS deployment.
+
+IOCs:
+IP Addresses:
+77[.]91[.]100[.]134
+195[.]133[.]88[.]48
+185[.]158[.]248[.]205
+
+Hashes:
+532edcad0f1637b4cb6fe2638c84c9cee2a52786b89f8d155c910bf60f43da9c
+9a4e37b900ae3ed3d8d5adff39f462a3607626f4f8c56687b4ef0f0295ed5318
+b81734717f36d3cea59e5690b984333c5a6908a15883a0463d77cb20dadcec0c
+87cd40fbf9f363c212a8402cc8350f624fd6760799c013a0cdd301707a5bd083
+7ee3574b0693e78060d863a5794437960aec0614af6c1909dd075daec0bcaf92
+0eae66824c65efe6b69937bf8427b7f28df591f2788b8088fbe9a05e8c26e077
+943bceda805a54b72bc26dc660ff1d4b7bc49b801aa45db8e9f70b0d02aff9cc
