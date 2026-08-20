@@ -1,0 +1,27 @@
+2026-08-05 - Formula 1 Phishing Campaign & Kit Analysis
+
+Research URL: https://socradar.io/blog/formula-1-phishing-campaign/
+
+Key Points
+- Expansive Infrastructure: The campaign is orchestrated across a network of at least 11 domains impersonating Singapore and Spanish Grand Prix events, all sharing a unified backend hosting structure.
+- Scale of Deception: The attackers have mirrored the entire architecture of the legitimate sites, creating a 134-page repository of content – including news, event info, and rules to bypass casual inspection.
+- Live Backend Control: The backend comprises 40 distinct PHP files designed for real-time human interaction. This allows operators to dynamically inject verification screens tailored to the victim’s specific bank.
+- Precision Targeting: The system utilizes credit card BINs to identify the victim’s bank, enabling the delivery of branded, customized phishing interfaces for 8 major institutions, including Emirates NBD, RAKBANK, and HSBC.
+
+IOCs:
+IP Addresses:
+144[.]31[.]3[.]209 
+
+Domains:
+f1-tickets-sg[.]com
+f1-ticket-es[.]com
+f1-ticket-spain[.]com
+ticket-f1-es[.]com
+tickets-f1-es[.]com
+tickets-f1-spain[.]com
+booking-f1-spain[.]com
+f1-tickets-spain[.]com
+f1-tickets-es[.]com
+f1-booking-spain[.]com
+f1-booking-es[.]com
+ticketsf1-madrid[.]com
