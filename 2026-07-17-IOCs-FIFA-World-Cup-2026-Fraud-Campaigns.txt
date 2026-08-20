@@ -1,0 +1,59 @@
+2026-07-17 - FIFA World Cup 2026 Fraud Campaigns
+
+Research URL: https://socradar.io/blog/fifa-world-cup-2026-fraud-campaigns/
+
+Key Points
+- The fraud landscape is front-loaded around the tournament’s opening and steadily declines throughout the competition. Activity roughly doubled before the 11 June opening, then declined without recovering, reaching 0.8× the baseline during the quarterfinals and 0.6× during the semifinals. The tournament’s climax attracted the least fraudulent infrastructure.
+- 79% of the domains observed at the peak were less than 30 days old (987 out of 1,257 on 8 June), having been pre-registered during May and activated at the tournament’s opening.
+- The signal is independent of platform noise. A neutral control term remained flat at the platform’s result ceiling throughout the observation period, ruling out scanning cadence as the cause.
+- Several campaigns operated simultaneously despite having incompatible business models. Merchandise campaigns burn infrastructure within five days and steal payment card data, portal impersonation campaigns pre-position infrastructure for two months and steal credentials, while ticketing and betting campaigns follow a different operational model.
+- The impersonation cluster is consistent with the GHOST STADIUM lineage, tracked here across 850+ domains (compared to the 300+ previously reported), with two kit generations whose evolution is documented through the operator’s own code comments, including a bug fix and an OPSEC migration.
+- The betting network relies on expired domains rather than compromised ones. Entry points are ordinary businesses whose domains expired and were repurchased for their retained SEO authority, creating a supply chain that is legal, frictionless, and largely beyond the reach of technical controls.
+- Country-segmented targeting is evidenced by dedicated per-country domains and in-site navigation, rather than being inferred solely from the kit’s language.
+- Three of the most striking correlations uncovered during this investigation turned out to be false. A shared Telegram bot token, an identical registrant identifier, and a common template all proved to be artifacts of shared infrastructure. In an ecosystem this noisy, the important question is which of those similarities required deliberate action by the operator, rather than what the domains have in common.
+
+IOCs:
+Domains:
+www[.]2026worldcup[.]fr
+www[.]usaworldcup2026shop[.]com
+www[.]argentinaworldcup2026shop[.]com
+www[.]mexicoworldcup2026shop[.]com
+worlcupfifashop[.]com
+aurevia-eu[.]store
+xajes1-55[.]myshopify[.]com
+shopworldcupatl[.]com
+trivelaprime[.]shop
+skiesticket[.]com
+fifa-uruguay[.]shop
+fifa-mexico[.]shop
+fifa-ecuador[.]shop
+fifa-colombia[.]shop
+fifa-bolivia[.]shop
+fifaworldcup2026jerseyshop[.]in
+worldcup2026shop[.]us
+fifa-com[.]food
+fifa-gs[.]com
+26-fifa[.]com
+fifa-mx[.]com
+fifa-min[.]com
+sdf-26fifa[.]top
+worldbuyyouself[.]com
+ww-wfifa[.]com
+chcn-2026-fifa[.]com
+chcn-2026-fifa[.]com[.]cn
+zhcn-fifalottery[.]com
+home-fifalottery[.]com[.]cn
+click-2026fifalottery[.]com[.]cn
+down[.]hkromancedating[.]com
+h5[.]onsts[.]com
+m[.]dasartisanat[.]com
+down[.]tcnstaffing[.]com
+vicssubsnj[.]com
+www[.]fifa2026coin[.]cc
+www[.]fwc26coin[.]com
+fifa2026[.]kr
+fifa[.]casino
+fifaworldcup[.]cfd
+watchsportslive[.]cc
+kickofftv26[.]com
+2026-world-cup-free-airtime-data[.]earnonline[.]pro
