@@ -1,0 +1,21 @@
+2026-04-07 - The Unknown Stealers: What’s Hidden Below the Radar
+
+Research URL: https://socradar.io/blog/the-unknown-stealers-whats-hidden-below-the-radar/
+
+Key Points
+- Evolution of infostealers from early banking malware to modern MaaS platforms
+- How stolen logs are sold and reused across underground marketplaces
+- Telegram’s role as the core infrastructure for stealer operations
+- Breakdown of threat actor models, pricing, and affiliate distribution chains
+- Technical insights into capabilities, targeted data, and post-infection impact
+
+IOCs:
+
+Domains:
+citrusshop.icu
+
+Hashes:
+0152914D34A70D620D711A5CF205D529
+e62bad247c046f8f5a0c75ff52ec4bed
+9a72d388dd1ff5c36a44c14c907bc3a0
+79f4e0b394b2f0ca0573b983b84741f4
