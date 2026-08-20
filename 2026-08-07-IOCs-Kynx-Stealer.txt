@@ -1,0 +1,45 @@
+2026-08-07 - Cracking Kynx: The Stealer Hunting for Your Wallets, Games, and AI Tools
+
+Research URL: https://socradar.io/blog/kynx-stealer-wallets-games-ai-tools/
+
+Key Points
+- Kynx is a new AI-assisted Windows-targeting stealer written in C++ with development history tracing back to at least January 2026.
+- Forum activity suggests a Turkish developer is promoting Kynx’s progress and subscriptions.
+- The threat actor shifted from code development to an active operational status around June 2026, spinning up their panel and resulting in the first wave of samples appearing on VirusTotal.
+- Upon execution, Kynx performs a scored environment check targeting virtual machine indicators with the cumulative score reaching above or equal to 3 terminating the process.
+- Kynx features targeted modules designed to extract data across multiple verticals such as browsers by downloading components like ChromeElevator or DumpBrowserSecrets, 65 crypto wallet browser extensions, 19 desktop wallet applications, 16 gaming platforms, 9 VPN providers, 8 AI coding tools, 3 email clients, FileZilla FTP and Discord.
+- Exfiltration occurs directly to the web panel via structured HTTP POST requests with data being segmented and transmitted in distinct categories.
+- The C2 panel is secured against unauthorized access and replay attacks, requiring an X-Kynx-Token header that is valid for only 5 minutes. Transmitting an invalid or expired token triggers an automated, permanent IP ban on the server side.
+
+IOCs:
+URLs:
+https[://]kynxdev[.]xyz/payloads/mce.exe
+https[://]kynxdev[.]xyz/payloads/dbs.exe
+https[://]kynxdev[.]xyz/payloads/chromelevator.exe
+https[://]kynxdev[.]xyz/api/v1/ingest.php?cat={category}
+
+Domains:
+kynxdev[.]xyz
+
+Hashes:
+e888d4b089fae16a9c2ba6114d603a97f282cfdd44bcd4793ab376699f75d192
+d5abe59abf73ed705aa7bba798dc417525aec110f3af48cd01c2074e763b6e21
+c934a2db58a1a64ee245a7627843508c6c517fcb06ea6855d26a72b41ae6753b
+e857298fd2f8d1c7d48780769433f33e7b3ceaae5ea5a74c13ce8c10bcc7b690
+f2f92ab39a60850f34b672a69ca49c805f2806ee42792ac1ffae35ff9082f1cb
+ea3455c896cac54d94c14240a8a9ff2558b4c0eec7fb7a4e71dcc0f2bd1c070b
+b4fcfeee3e8fba9a16cf2ed992319b92cb41077df00ddc497b0b839a9a995658
+b07d2ac807376917e664529df16e2ffc2a1ef74085abe2e8fc33780fcfd14ba9
+aa7d9a173ebf7375663561cad02b9151d2ef5c0811f5c1989453283737acf5ea
+868adce4fd9e3fce8df6b5a1d0ac7a470013f3ee17e6f4ad534cb47df81a169b
+5ee02f807c2a96a4682fc08a21ca63940fec549a766e9b37515924d1c0ba89ad
+5861fb86ad5395424aad41147aa5db0735e7dbd36192192f18b22e4506cae636
+531b831af19b01b1f60574602ecb4527e10d9807a834f55a924a2e1ce25010c7
+4f7e6f33e7e80b17f5c7f59ba45f3e32431b639b7d91c2bda1b26664788c8b8b
+4b29d806723adc64a06dc55fc7313e0fdbfac8430c98a10213f023aeb3b4d24e
+4865e7f7d6e839bfd951400c6172a56f6b8478fca8a40cd7984e6ca592e8f123
+3e5be9467dbc542d34a355ce485709faad81d592c5a1967e7811046f6d893b7f
+3a007235a69ad33701aeb8a6075646138aeb181720cde884c320d4fefe6be66c
+3507d3619e9477a209514b1498ed6f00f58bafe9714a2bd2c8655a0fe500d3d8
+260f42eea5cfea6a61c0359ae205ee286c327c655b36c63fc01e7fb48c54cd18
+18d69ae35df9231a068482e2d1b8a8fcfcc18b9425a8cfe1dbe19e4f52a204aa
