@@ -1,0 +1,41 @@
+2026-07-06 - The Quarry: Tracing a Cybercriminal Operation
+
+Research URL: https://socradar.io/resources/whitepapers/following-the-trail-the-quarry-threat-research-report/
+
+Key Points
+- Detailed analysis of a large-scale MaaS and PhaaS ecosystem operating since at least 2025
+- Attribution of the operation’s developer, infrastructure, and affiliate network
+- Breakdown of the complete attack lifecycle from phishing to post-exploitation
+- Examination of cloaking, traffic filtering, and anti-analysis techniques
+- Analysis of phishing lures impersonating government agencies and major brands
+- Insights into Telegram-based operations, infrastructure management, and affiliate activity
+- Victimology, geographic targeting, sector distribution, and observed TTPs
+- Indicators of Compromise (IoCs) and defensive recommendations for security teams
+
+IOCs:
+
+Domains:
+estatetaxarchives[.]com
+hub[.]ssa-guidance[.]com
+inherittaxpapers[.]site
+verify[.]federal-docviewer[.]com
+portal[.]federalverify-ssaclientportal[.]com
+trusttaxportal[.]com
+estatetaxrecords[.]com
+tax-filecenter-irs[.]matthewtarwater[.]com
+mytax-organizerbff8ffb1-46c6-4de6-be12-9db01b9719a7[.]ccc-food[.]com
+mytax-organizer[.]noisetteroseproductions[.]com
+mytax-extensionorganizer[.]armpakenergy[.]com
+apps[.]docu-sign[.]net
+secure[.]login-socialsecurity[.]com
+hub[.]ssa-userstatus[.]com 
+secure[.]ssa-documentsync[.]com
+
+Hashes:
+8974830446d35e234881696092aded87
+ef970697c5094c443f0456774cfee9bc
+935413b08ef60cd819b2e1b573fc9050
+2163afa18a3cdfa525b767e0e1baaba1
+1827aa636cd86d1a4064e112aa197303
+00b69eb7f44b5987f68667343aaafb6a
+01ab231bcd9533f90e99651521b6e1bb
