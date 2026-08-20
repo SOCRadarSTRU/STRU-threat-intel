@@ -1,0 +1,68 @@
+2026-08-03 - Introducing DOUBLECUP, a ClickFix Loader Delivering CountLoader and DeviceManager RATs
+
+Research URL: https://socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats/
+
+Key Points
+- DOUBLECUP is a new Russian Loader-as-a-Service (LaaS) for ClickFix campaigns operating since early June 2026.
+- The developers offer licenses and a client agent where operators can create campaigns and load payloads by embedding the required code in their pages.
+- DOUBLECUP functions by providing ClickFix commands to cache and execute code from a steganographic PNG image.
+- The retrieved code decrypts the final payload using a custom SHA-256 stream cipher in Counter (CTR) mode along with bitwise XOR, utilizing the victim’s public IP address as an environmental cryptographic key.
+- The final payloads identified include an updated version (4.5p) of CountLoader (PowerShell for Windows and Mach-O for macOS) and a new, undocumented RAT named DeviceManager.
+- CountLoader 4.5p introduces several new capabilities, including copying, renaming, and patching the PE headers of legitimate utilities (conhost.exe, powershell.exe, mshta.exe) to execute commands stealthily.
+- DeviceManager is a RAT that uses scheduled tasks or WMI Event Subscriptions for persistence, DNS tunneling or HTTP for C2, and resolves its C2 from the blockchain via EtherHiding.
+
+IOCs:
+IP Addresses:
+213.139.77[.]109
+80.96.109[.]229
+167.148.201[.]131
+89.124.117[.]12
+103.22.137[.]227
+67.219.107[.]181
+146.70.124[.]154
+91.92.240[.]100
+
+URLs:
+http[://]67[.]219[.]107[.]181/hgflssvslvidfugvbldiuv
+https[://]appleid-customertelemetry[.]gl/setup[.]sh
+https[://]appleid-customertelemetry[.]gl/AppleIDVerificationService
+https[://]s3[.]us2[.]lyve[.]seagate[.]com/fullstack09/MicroUpdaterV1[.]exe
+
+Domains:
+srv641398444.host.ultaserver[.]net
+nxtdrcliam[.]site
+canva-arts[.]com
+cap-t1[.]spec-connectweb3[.]tv
+cap-t2[.]spec-connectweb3[.]tv
+cap[.]spec-connectweb3[.]tv
+cloud-electronic[.]com
+cloudscraft[.]com
+doublecap[.]ltd
+doublecap[.]live
+examcanvas[.]com
+storagepioneer[.]com
+supercloudsaver[.]com
+ticgo-cloud[.]com
+roqqcloud[.]com
+login-netsuite[.]com
+login-odoo[.]com
+verification-salesforce[.]com
+login-salesforce[.]com
+login-hubspot[.]com
+pending-verification[.]com
+alphastore[.]vg
+appleid-customertelemetry[.]gl
+
+Hashes:
+882914f9014f14e89123e835f103ac8f9d4b2e358c1f21c1cbc7f1054e6afed6
+8585721cbc46780903bd727e37a9ed07a33463852046ff65bc718ded4c80dfb1
+28cbbca8099bb1b27668d135314842c69ceb478a7d6b4b08f063d106a06c8f9d
+6e08cb5602f63bee2b40739167b4aef77763bc8fb47b4839ca2fc1607ad35cba
+ea70895620f955b0712b85c3fee41de7437d5068267966f0b4fb6fa2704c3a50
+bdf28e611d77362c40a0445655a35943c03accf21bb9a5af755da7eac5ea5e40
+afe273533d6f9d0b8852988f6a4b34571dd52af4c690e54723a86257aa8a015d
+08730fda7366104b1461b12834f55723381bf34a234947689c708b1ee431af69
+
+Blockchain:
+Smart Contract - 0xc027490AF56a9d7050fc259Ecd03DA1580b84aae
+Ethereum Address - 0xCE17b1EF00d47105Bc127BbE6fC45dE47BC22fb8
