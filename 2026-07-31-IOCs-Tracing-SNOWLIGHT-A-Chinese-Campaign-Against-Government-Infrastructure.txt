@@ -1,0 +1,44 @@
+2026-07-31 - Tracing SNOWLIGHT: A China-Nexus Campaign Against Government Infrastructure
+
+Research URL: https://socradar.io/blog/snowlight-government-chinese-campaign/
+
+Key Points
+- Attribution to China-Nexus Actors: The core delivery mechanisms have been definitively linked to the SNOWLIGHT malware family. Tracked by the Google Threat Intelligence Group since 2024, identified loaders are heavily associated with China-nexus access brokers UNC5174 and UNC6586.
+- Cracked Chinese Reimplementation of Cobalt Strike C2 Infrastructure: Command and control (C2) infrastructure is managed via “GoCobaltStrike,” a specialized Chinese-language reimplementation of Cobalt Strike authored by the handle “星落”, featuring cracked license constraints.
+- Government Sector Prioritization: More than 85% of mapped reconnaissance listings target national infrastructure, resolving to second-level government domains (.gov.*, .go.id) across Taiwan, Colombia, China, Brazil, Indonesia, Nigeria, the Philippines, and over 90 other geographical jurisdictions.
+- High-Impact Endpoint Takeovers: Out of an expansive footprint exceeding 9,990 hostnames across 104 country-code TLDs (top-level domain), the threat actors successfully exploited 9 distinct CVEs to breach 107 endpoints. This includes critical administrative compromises: 16 root-level cPanel/WHM takeovers (CVE-2026-41940) and 1 Domain Admin level compromise via ProxyShell.
+- Reverse Tunnel Traffic Obfuscation: Operators effectively masked their network trail by deploying Neo-reGeorg web shells over pre-existing JSP shell implants, using third-party compromised systems as reverse tunnels to proxy further malicious actions.
+- Opportunistic “Spray-and-Check” Tactical Model: The campaign leverages automated scanning rather than bespoke targeting. Roughly 1 out of every 90 scanned targets resulted in a Remote Code Execution (RCE) oracle hit, credential theft, or shell validation.
+
+IOCs:
+IP Addresses:
+130[.]94[.]17[.]180
+130[.]94[.]30[.]168
+92[.]38[.]135[.]196
+221[.]198[.]83[.]248
+149[.]129[.]37[.]105
+
+Domains:
+google[.]chromeupgrades[.]com
+speedtest[.]qqmail[.]website
+
+Hashes:
+ebc94e24e4df94f988dd0a2275e8a3f1957051814a3c39ec30bfaca2f5ca2607
+dc493eb8367b7d68f4d3d9f2a10c495c6a45c33df72fb5a18bdf62b629f69e31
+9c59a0dadec1f1b73724f3ee4113e4fde696214371b9068fd69774db4cd8b8d2
+66543c4f9f4d610a79efa5e52b9aa90ca41dbfc154418435a2902ac48dad2ee4
+a4989ae1d598e79a87a9e01d0b5966a25b00b23ca234fbdb52b9df7b29db918a
+b96cdf8bc96c7288af7624974b1a10b7bf16e5ac03ac8493ade20696a906a81a
+75d39860a5c5ce6c26590265102f25c50f91a22b6769d22046759fb3aff8d0a8
+d7ed70cdd88f6cccbdc0ad6851d7a61b7fce79fdf9c4cd9f9bb375233a96b2dd
+b7486bb7fc5f7e659b40dab3366b576d68db61ca0004de7a1e115eb9b541f19a
+b272e2e4a7c65f2659a8fff8ceec4d9538f74f6dc9bace7d051a4476ba6bc77c
+c0a5374a425ee5030b2219520dfa3a3a51f27d3cc4404b016e695c4450fe3034
+adde431d5b78b2b2cfb67c5bcd938be6cc466fbb3ac2786cad97b493f6fcfad5
+4738f3559c10f7c62a3be48ec2ce42c584b53d5ffa9e06e6521607a6fdfd535f
+00b0cef237d9619c99c5d90cf902ec768c1ecf4f96d542d31dc5afb0b564cb4f
+2ac6c953d2d36eb7e7e85aa0822a65961071f7801a25118ab42bcfa9693327a1
+20e1ec6b07abe3b2dd54f7ae4e47dc00afa46de6e6c0ef0239c26c8bae70a43a
+c2d0e4dd2f2b3f1d4eb4518984b00ed521c73d1e935780786479db690112ef9c
+af769f3bff848bac7b73bf749769424b3df6c9175388980d99e0d6d0193237ba
+ff88974f51918238f0ea9a74f013ff3ac3c536fce369ead5252ed0137fd32d9e
