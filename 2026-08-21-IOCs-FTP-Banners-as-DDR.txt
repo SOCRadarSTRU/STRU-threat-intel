@@ -1,0 +1,56 @@
+2026-08-21 - FTP Banners: The New Dead Drop Resolver Delivering Novel RATs
+
+Research URL: X
+
+Key Points
+- STRU discovered active abuse of FTP banners as DDRs, allowing malware stagers to fetch commands directly from the protocol’s initial response.
+- While currently observed in malicious LNK files, this technique is highly versatile and easily adaptable for “ClickFix” social engineering campaigns.
+- FTP-based DDRs were found delivering two previously undocumented RATs: E4del and PINHOLE, tracked as separate clusters.
+- E4del is a modular, Electron-based RAT offering eight specialized commands, such as live desktop streaming, screenshot capture, and privilege escalation.
+- E4del’s beaconing mechanism implements a tiered jitter system, dynamically transitioning between three distinct states (Active, Semi-Active, Inactive) based on the elapsed time since its last received task.
+- PINHOLE is a sophisticated multi-stage RAT with fourteen distinct command types, including browser credential theft, file upload/download, and screenshot capture.
+- To evade detection, PINHOLE employs Halo’s Gate and Early Bird APC Injection. Additionally, it leverages legitimate platforms like Pinterest and SurveyMonkey to resolve its C2 while proxying its traffic through Cloudflare Workers.
+- PINHOLE operators also maintain an “FTP Stats Panel” to track script execution and IP addresses connected to their infrastructure.
+
+IOCs:
+IP Addresses:
+209[.]99[.]185[.]38
+69[.]48[.]228[.]126
+72[.]5[.]43[.]81
+45[.]61[.]136[.]50
+45[.]87[.]41[.]133
+185[.]14[.]92[.]162
+64[.]95[.]13[.]65
+157[.]254[.]194[.]31
+167[.]148[.]41[.]164
+
+URLs:
+hxxps[://]157[.]254[.]194[.]31:21/api/download?token=[token]&clientId=[hwid]
+hxxps[://]157.254.194[.]31/beacon
+hxxps[://]cloudflare.milicare[.]in/app/c
+hxxp[://]69.48.228[.]126:5000/
+hxxp[://]209.99.185[.]38:5000/
+hxxps[://]worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev/hxxps[://]nokierojotiarmx[.]com
+hxxps[://]worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev/hxxps[://]nokierojotiarmx[.]com/api/health
+hxxps[://]worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev/hxxps[://]nokierojotiarmx[.]com/api/bc
+hxxps[://]worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev/hxxps[://]nokierojotiarmx[.]com/api/client
+hxxps[://]worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev/hxxps[://]nokierojotiarmx[.]com/api/tsk
+hxxps[://]worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev/hxxps[://]nokierojotiarmx[.]com/api/fls
+hxxps[://]worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev/hxxps[://]nokierojotiarmx[.]com/api/fls?type=1&file_id=%lld&key=%s
+hxxps[://]worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev/hxxps[://]nokierojotiarmx[.]com/api/stlbrwsr
+hxxps[://]mx.pinterest[.]com/pin/1128292512937332995
+hxxps[://]mx.pinterest[.]com/pin/1128292512937332894/
+hxxps[://]www.surveymonkey[.]com/r/WW5NVT6
+
+Domains:
+nokierojotiarmx[.]com
+worker-1785198984-xsekhi.api-62c3cac6.workers[.]dev
+
+Hashes:
+117b2b7e7c0deee1f7bf0f154babc09738eac18e810625fab4f54dc8088d731c
+e0c41dc44368efdf504b28ce015dd3e91f4e711db12e92c159173f75b5320ddb
+fcc6fdf40f4dea8f508ef0b8c45a657461310a3f7947a8c687b476e0f0b41e26
+391a605878222f23bf5900a07bc17bedcbda124fb0738d50f6bbb0c1762ae172
+27587e078b59173a92cf9746ab1839da9196089c00e8b694860361da309142a5
+af769f3bff848bac7b73bf749769424b3df6c9175388980d99e0d6d0193237ba
+ff88974f51918238f0ea9a74f013ff3ac3c536fce369ead5252ed0137fd32d9e
