@@ -1,6 +1,6 @@
 2026-08-21 - FTP Banners: The New Dead Drop Resolver Delivering Novel RATs
 
-Research URL: X
+Research URL: https://socradar.io/blog/ftp-banners-new-dead-drop-resolver-rats/
 
 Key Points
 - STRU discovered active abuse of FTP banners as DDRs, allowing malware stagers to fetch commands directly from the protocol’s initial response.
