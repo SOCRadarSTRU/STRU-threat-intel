@@ -44,8 +44,6 @@ responsible for any misuse of this information.
 
 ## License
 
-Licensed under the [GNU General Public License v3.0](LICENSE) — the same license
-used by other public threat-intelligence repositories such as Palo Alto Unit
-42's. Derivative works must remain under the same license.
+Licensed under the [GNU General Public License v3.0](LICENSE)
 
 Copyright (C) 2026 SOCRadar. All rights reserved where applicable.
