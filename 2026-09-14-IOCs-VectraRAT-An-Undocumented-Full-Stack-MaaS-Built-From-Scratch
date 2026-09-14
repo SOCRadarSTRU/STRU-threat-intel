@@ -1,0 +1,33 @@
+2026-09-14 - VectraRAT: An Undocumented Full-Stack MaaS Built From Scratch
+
+Research URL: https://socradar.io/blog/vectrarat-undocumented-stack-maas/
+
+Key Points
+- STRU has identified a completely undocumented RAT that has been operating for years under the name Nyxel, also undocumented, which is for sale on the black market starting at $250
+- OpenDirs containing information about an infrastructure belonging to the attacker, along with binaries related to VectraRAT, have been found
+- Dozens of uncategorized infrastructures and binaries related to the new RAT have been identified since June 2026.
+- The adversary relies on an ELF file to generate autonomous platforms for its clients, which serves as a command center for the victims and to generate the RAT.
+- Dozens of victims have been identified, with the United States being the primary target.
+
+IOCs:
+IP Addresses:
+86[.]109[.]75[.]168
+178[.]16[.]54[.]148
+195[.]20[.]115[.]77
+195[.]63[.]145[.]106
+91[.]92[.]242[.]236
+91[.]219[.]236[.]179
+
+Hashes:
+e2db5db12564d2a9da7ef3a57aa23d95782f5eaddc8bd35eb7c35ae6b844a0f0
+dede8bfb55c2e6479d89b1e73e0712791cf16a7179325804fc4bc13f708d08ae
+ddbd636f6dfd475dc0c75bf9f6f873fa35b9062dee9d37b3377ae7b9acdcd0c9
+b926cfcd3f4b07fe6001c39f46e40225ff8000411198d13782538d770c54ae5e
+bff3583d04f0d5603ced9831eb7c45c1923bd90e2f7d5e5d2b32942d38cf6dc5
+c708d413720848f8788f43a4f47ddce016fca9af10c9ba4113f47bf2c9244dc5
+8745e872ff8aa41b0e03737f76bf35b6c934106c987dff98afe34120e47caf91
+bba58f99e14e3512c04a5a74a079d7851abf935dd258cff4c80874ce7cfc82e3
+d8f15ba122cd6da01f83fe05294df80a6eadbce0f66dac7c2bcc0904f066e0de
+3ab56c9fb6b7c404c1e5b36788959c877ea819fb124c3847fa0498e9915ef9a7
+7b82f08120e0d9b16cd5b9ec59d24fb68e35735c82311a233d370e7f264af650
+B738c03fef5e3d26419e4aab1818a0a7ad206c67fb3eeedcdfb3ef1ee07eb620
