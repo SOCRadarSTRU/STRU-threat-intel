@@ -1,0 +1,49 @@
+2026-09-22 - Operation Conflict Compass: Konni Targets Ukraine via Malicious LNK Lures
+
+Research URL: https://socradar.io/blog/operation-conflict-compass-konni-ukraine-lnk-lure/
+
+Key Points
+- STRU uncovered Operation Conflict Compass, an early August 2026 campaign by the DPRK-aligned group Konni, apparently targeting Ukraine-focused individuals and organizations.
+- The campaign likely aimed to gather intelligence on the trajectory of the Russian invasion to gauge the medium-term outlook of the war.
+- The actors sent spear-phishing emails containing ZIP archives with malicious LNK files masquerading as PDF documents.
+- The deceptive PDF-themed lures centered on global food price growth due to the Strait of Hormuz situation, peace negotiation documents, and social researcher resumes, indicating potential targeting of diplomatic entities, think tanks, and Non-Governmental Organizations (NGOs).
+- The malicious LNK files launch a VBScript that establishes persistence via a scheduled task, triggering a PowerShell script to run every minute.
+- The invoked PowerShell payload, named VelvetCake, functions as a modular downloader designed to fetch and execute secondary server-side scripts.
+- The actors used South Korean and Ukrainian websites for hosting their lures, GitHub for staging their scripts, and Medianewsonline (a free subdomain service) for C2.
+- Campaign attribution to Konni is supported by targeting of Ukrainian entities, signature VelvetCake code characteristics, shared C2/staging infrastructure, and threat actor operational time zone alignment.
+
+IOCs:
+IP Addresses:
+111[.]92[.]246[.]145
+
+URLs:
+hxxps[://]github[.]com/omskiwdcvoiuyfd0998/
+hxxps[://]github[.]com/omskiwdcvoiuyfd0998/media
+hxxps[://]github[.]com/omskiwdcvoiuyfd0998/medianews
+hxxps[://]github[.]com/omskiwdcvoiuyfd0998/zoominstaller
+hxxps[://]github[.]com/omskiwdcvoiuyfd0998/0ijnbjfke8djfefhkehhdkefkeu90djfkefh
+hxxp[://]p1o2i3u4y5t6r7e8w9q0[.]medianewsonline[.]com/login[.]php?OKey={$env:userdomain}&Areyou=cake&Who={$env:username}
+hxxp[://]p1o2i3u4y5t6r7e8w9q0[.]medianewsonline[.]com/logout.php?OKey=$env:userdomain&Who=$env:username
+
+Domains:
+p1o2i3u4y5t6r7e8w9q0[.]medianewsonline[.]com
+jaemoolding25863[.]elementfx[.]com
+zvwb1ep7i[.]onlinewebshop[.]net
+
+Emails:
+omski00[@]outlook[.]com
+
+Hashes:
+297292d46d4f11fc801f5d6d01251735698a8419aa3196db7b3aa7bb8ea85cad
+d398f11c236a59e44a9dff6f99af3aacefcb4a4bdf77bb7cf790cd0b13b0439a
+0db1e8a3075ffc2f5caa91abaeabb6ba4365ae0eda64d179374614a79e317733
+ec47a2101de4f1fc25995e775ddb48e20977081c4d885e6ff8fdfe9109d05495
+ac8df7baf7f1397a8c194840f6a5c1b0182088febde55f46d9f73ee8abc97c1d
+e162d64d3e69cea868f62f63906098de310fad9fa1ca693409a65de89760eaaa
+9f2cc22a74499b0a5b39a8f4732ff74d7338addd972387302016ba5a026936ac
+d3e599af47b110ab526ee38edaae68df3d8ab257e689e6f6f84d6db7d3ba5937
+467660ef31b8ec248ae434fdee0a68de5098bcfd08776a4004ccbdcd7904bd37
+c88165d943f59014d668818d99d9819e6d295d355c4e935ad7a2380bbe32ccc4
+cd0a48b5ebd946ea2b8964e9d6a73a48d73777fdb7c8da99c28404150b560f6c
+e41fdf41e6f5d089d1b8d7ea6f6a5c76760fe2a553c8ebc47601ebeca01311e1
+76e9bdf193b3127623b674efdf3f0e3585932af33c9c85a3d6375d369de0e12a
