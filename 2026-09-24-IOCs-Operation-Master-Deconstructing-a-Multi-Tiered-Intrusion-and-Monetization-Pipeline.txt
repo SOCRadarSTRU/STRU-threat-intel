@@ -1,0 +1,54 @@
+2026-09-24 - Operation Master: Deconstructing a Multi-Tiered Intrusion and Monetization Pipeline
+
+Research URL: https://socradar.io/blog/operation-master-intrusion-monetization-pipeline/
+
+Key Points
+- The threat actor exploited CVE-2026-0257 (GlobalProtect authentication bypass) to establish unauthorized network access across 7 gateways in four countries.
+- Reconnaissance operations included 277.5 million address scans across 22 log files to curate a target list of 81 high-value organizations.
+- Data theft was confirmed across 9+ database instances, leveraging "xp_cmdshell" to pivot from SQL injection to remote command execution.
+- Offline credential artifacts, including SAM, SYSTEM, and SECURITY registry hives alongside an Active Directory database, were successfully exfiltrated.
+- The threat actor utilized domainless phishing tactics, such as M365 OAuth device-code phishing and phone-guided vishing, bypassing traditional email gateways.
+- Deployed AdaptixC2 as Command&Control Framework, establishing active control over 2 or more Windows server identities.
+- Data exfiltration relied on dual redundant vectors, combining continuous DNS subdomain tunneling with automated "rclone" cloud synchronization.
+- Operated an invoice-fraud engine generating over 2.4 million email/SMS messages and 622,666 personalized links before going offline in mid-September.
+- Collected funds via PIX using a serverless proxy structure; receiving-side key material remains unrecoverable from this dataset.
+- Tracked a single operator email address “cyberkill2025[@]gmail.com” across five distinct operational contexts and linked it to forum persona "masterblack" via leaked database records.
+
+
+IOCs:
+IP Addresses:
+185[.]242[.]3[.]14
+85[.]120[.]216[.]8
+91[.]92[.]241[.]187
+91[.]92[.]241[.]184
+
+Domains:
+yzs[.]fi
+igreenfaturas[.]to
+igreenfaturas[.]com
+wattiofaturas[.]com
+nuvfaturas[.]com
+pix-proxy-sable.vercel[.]app
+
+Emails:
+cyberkill2025[@]gmail[.]com
+
+TOX IDs:
+875F64334AD7FD45C491D0A9A7F0A47002FD1F008AA6FAB6127A20101E03B23CF1807AB13BCF
+056B1E74A4D4C16C043FC192685DB10941E146E482DD262ADE9DAE77579AEB689049C3CF5E32
+
+Hashes:
+d566ccdd099b0decb7e7288c20097f34da2613e3ffe8c5acbc1a1d01b6fe217c
+c40c1d4bb0e01f217c893f3dbc6b40802a260ef423f628889a48f996a4c96ed8
+2553146aea0b133d565684a8bdfb14cb91526eb88b4e5b22b129b1212f763dd7
+54caa256483876debd21c264bfc31bd96f925b2167f6d9358ab7ee0c87e6e37b
+0c36cf593cf177b87f34abb19b5d65619199a4aca9c8e19e39318ad2c4033385
+fd72014903466f2abcabb724df58682e629bf300703a06dad4dd0551018a42b5
+39aab72976d63f0218c3470c05afce5a896d28f860efaa598288d9409499b26b
+9a839b1e4c8cc5c0ebac1849973f136e68aae8eba357296be9e6cef9aff35ae6
+88527b06d836200a36130ee219242e4a8342520df85cb3886769da646dac25c9
+2ced60c88f5a2b36acb977ebf120e39b527dcff07b5072013350ebeefcabe760
+6394cb167a33772fc47596e22cd2a51f3dfa9867385d962cb700b78f021c60ca
+0b6bb51ef917c32edf75ff65a510b6a136575cfd2075305f7abe7d98e351b8b8
+eda93a71e656874077aa76d32d5147ea904ef60504b6b1b22b609969c06fb40b
+f9b147a2bf6cc53ed4e3c3d4d33efa072c19495ff86fa320a280097d66cb2d92
