@@ -1,0 +1,28 @@
+2026-10-06 - CyberXero: An AI-Augmented Initial Access Broker Targeting Ukrainian Critical Infrastructure
+
+Research URL: https://socradar.io/blog/cyberxero-ai-iab-ukraine-critical-infrastructure/
+
+Key Points
+- STRU has documented CyberXero, a Russian-speaking, financially motivated Initial Access Broker that pairs commodity offensive tooling with an AI orchestration layer, allowing a single operator to run campaigns at a scale that would normally require a team.
+- The whole operation surfaced from an exposed open directory (90,000+ files) serving the actor's live working directory, including AI session logs, scripts with plaintext tokens and exfiltrated victim data. Eight infrastructure nodes have been mapped across three ASNs.
+- The adversary runs two parallel pipelines: a global, automated campaign against WordPress and e-commerce platforms (429 admin panels confirmed and 32 shells deployed in a 61-second window), and a curated, manual campaign against Ukrainian energy and critical infrastructure.
+- The AI layer relies on up to 51 specialized Claude Code agents plus a PentAGI deployment wired into a Cobalt Strike Team Server. The actor's own session logs record model refusals and the context-engineering and session-reset techniques used to work around them.
+- More than 40 organizations have been affected worldwide, with Ukraine as the primary target: over 628,000 Ukrainian individuals have confirmed data in the actor's possession, including 564,073 subscriber records from a district heating provider in Kharkiv. Poland, China and Pakistan were also targeted.
+
+IOCs:
+IP Addresses:
+46[.]21[.]250[.]135
+45[.]88[.]106[.]2
+212[.]193[.]31[.]189
+42[.]193[.]227[.]214
+91[.]208[.]184[.]148
+45[.]88[.]106[.]78
+49[.]234[.]12[.]182
+42[.]193[.]100[.]94
+
+Hashes:
+92a789444708fa1cb4cc5a89e0aa6cc7a279b62a7b8a4d2857255a18197d0090
+a5ae0aab352871bc0b038b3aa43b03eb223425628c884af7b9fc592cd34eb86c
+71e21094c1ac1cf0275c91ed377965e248bca1c12711f6dd20e2682681fc1192
+59c535f47ab4d35f6d9fc8b8aec4a72438ea0b89e5a4dcea74b05d2d32cfa483
+3870a559b5b6ea6076f5f90029c180b7
