@@ -1,0 +1,48 @@
+2026-10-06 - Inside ICMacOS: From an Infostealer to a Persistent RAT
+
+Research URL: https://socradar.io/blog/icmacos-infostealer-rat/
+
+Key Points
+- STRU identified ICMacOS (aka Icarus macOS), a new macOS infostealer distributed under a MaaS subscription model since early September 2026.
+- The stealer is actively advertised on cybercrime forums by a Russian-speaking actor operating under the handle GlowComa, with feature updates regularly announced via Telegram.
+- GlowComa promotes ICMacOS alongside Icarus ClickFix, a companion panel designed to deliver payloads using malicious copy-and-paste terminal commands.
+- The infection chain relies on initial dropper scripts to detect the host architecture and harvest administrator passwords using fake system dialogs before delivering the primary payload.
+- Version 1 focuses on stealing core assets, including browser credentials, password manager databases, cryptocurrency wallets, developer secrets, messaging application data, and local files.
+- Version 2 expands these credential-harvesting capabilities while introducing full RAT functionality, leveraging WebSockets for Command-and-Control (C2) and LaunchAgents for persistence.
+
+IOCs:
+IP Addresses:
+85.137.253[.]61
+45.13.186[.]247
+
+Domains:
+escapeai[.]live
+mikoblico[.]xyz
+
+URLs:
+hxxps[://]escapeai[.]live/api/build_config
+hxxps[://]escapeai[.]live/icmacos_run_v2[.]command
+hxxp[://]escapeai[.]live/loader_v2[.]sh
+hxxps[://]escapeai[.]live/ICMacOs?arch=arm64
+hxxps[://]escapeai[.]live/ICMacOs?arch=amd64
+hxxps[://]escapeai[.]live/payload[.]py
+hxxps[://]escapeai[.]live/upload
+
+Hashes:
+5dfb0c01ac5c075e23ec37873b30ba16cf28e290e9439d04101f0a8191f929d8
+8cc449e7e240894e77187f6faff415bc8b9f2f9da73f60eef1f7605debd9144a
+62e435102e1e1de74537f174ede7c8ff198dc4df3fd2e1167f537096e0b4dd17
+857236d1902f4604acdf27519c0310064d21f8a82af3b95b1e4f02fef581b1d0
+6917505bbdc8efa01ea1a0298eae62a93a57a8c98d3712a69d822dca4a667f05
+dca852b53c259641e1782bd9122c5007130614a7a8fd17102400acb4f50f6e94
+e7e8ac14aaee970c6d00c6cbb398decc56dfc128974c01bfc8e7acd13a18576e
+ec37acd3bd15f50eee2941d5644ca0ee738b36ce4a39e9e08058e35ebc7961fc
+fcf9de13ecc70b4fda3998ed7a93849edf86c48767a1a13f32f4a6a631a65ae2
+3d4f70172c8f31813e7b37fc1a49bce193663e33c4eb65952bb5aec9d7176826
+8b7606bdccdd6ff691db875283fdf5b6b658dd8d4d141b44e07f8f2583ff5604
+bc8d70f000e73c0c7a69a2676805190e7109cab59df3e34c5a74d2cb7f13a7e4
+a9b21ac0112855b835b5e5850ef167471eff7305d42b3a8104c1961b257a444d
+c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c
+e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31
+d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4
+8b4303a065e18e80050ef22031ec60b1a4e84f958d9e56cc5cc34cd29d988d69
