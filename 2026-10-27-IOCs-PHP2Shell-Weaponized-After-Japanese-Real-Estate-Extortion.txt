@@ -1,0 +1,22 @@
+2026-10-27 - PHP2Shell Weaponized After Japanese Real Estate Extortion
+
+Research URL: https://socradar.io/blog/php2shell-weaponized-japanese-real-estate-extortion/
+
+Key Points
+- STRU has identified an exposed staging server (open directory, 3,800+ files) belonging to an extortion operator, using the handle kkkkevin777, that held a weaponized copy of the PHP2Shell reproducer package (CVE-2026-109618 and CVE-2026-109619), added on October 21.
+- The extortion wave ran between October 9 and 11, 2026 and did not rely on PHP2Shell. After compromising a Japanese real estate services company, the operator used a stored SSH key and a database password reused across sites to pivot to nearly 20 other Japanese websites on the same shared hosting infrastructure.
+- Victims were pressured with fake maintenance notices on public homepages, ransom notes on admin panels (deadline October 11, 2026, 04:00 JST), a cron job that kept restoring the pages, and a bulk-mailing script aimed at the initial victim's customers.
+- Stolen data includes 16,061 member records with plaintext passwords, income and savings details, plus five SQL Server backups, 663 FoxPro files and 730 business emails from a Taiwanese company. Customer data also exposes email addresses on major Japanese telecom, banking and technology domains to phishing and credential stuffing.
+- No saved output shows a successful PHP2Shell exploitation against a live target, so it appears to be the operator's next capability. The server also hosted a PowerShell C2 for a separate "finance line" operation, and the files point to a Simplified Chinese-speaking operator who scanned 3,913 Hong Kong and Taiwan IP ranges.
+
+IOCs:
+IP Addresses:
+96[.]126[.]130[.]81
+
+Hashes:
+7a4dbc0bde56ef13a6dbc0320003cf84
+86d23b5fc903968a5fd91ea6d5c3737c
+1e1523c710fcbbe16734aee1f79d6219
+76f090c92a69e46c2a31946ab726541c
+6ae69f4e6d7d5f03cf30e1ad1ee5bbd6
+52341a6282f8244a266e3a72d7a1530f
