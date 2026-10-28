@@ -1,0 +1,106 @@
+2026-10-27 - Automating Extortion: Inside an AI-Assisted n0n Ransomware Operation
+
+Research URL: https://socradar.io/blog/n0n-ransomware-ai-assisted-extortion/
+
+Key Points:
+- An open directory at 185.157.161[.]148 exposed 1,719 files from an n0n ransomware operator's workspace across two September 2026 snapshots
+- High-confidence attribution to the n0n ransomware group: Group branding and leak-site addresses are present across ransom notes, the .n0n encryptor, email jobs and exfiltrated leak archives, and 10 of the 13 negotiation-room keys were identified
+- No vulnerability exploitation was identified; every identified compromise relied on compromised or weak authentication credentials. Entry points encompassed a widespread credential stuffing campaign targeting 305 FortiGate SSL-VPN devices, exposed AWS credentials, insecure RDP/WinRM credentials, and the compromise of management portals at a cloud host
+- Network security tools were weaponized against targets: in multiple instances, the threat actor hijacked the target's Cisco Firepower Management Center to reconfigure all access policies to BLOCK, which the actor claimed caused widespread service disruption, before proceeding to encrypt appliance data
+- Data destruction serves as a deliberate leverage tactic alongside encryption. At the Fanatics case, the operator exfiltrated S3 data without deploying an encryptor, then deleted the bank-transaction archive and twelve confidential buckets, claiming its copy was the only complete one left. In the Dediserve case, it claims to have wiped 46 servers and their backups 
+- Backed by three confirmed AI gateways active through mid-October, an AI coding agent utilizing ~150 models created hundreds of attack scripts, incurring more than $7,216 in usage costs
+- Extortion scaling relies on dedicated Bitcoin addresses generated per victim, along with a mandatory 10% entry fee for negotiation portals and the systematic removal of operational traces prior to data leaks. As of October 19, tracking revealed 93 listed victims and total ransom demands reaching $283.7M
+
+IoCs
+IP Addresses:
+185[.]157[.]161[.]148
+185[.]157[.]161[.]93
+81[.]161[.]239[.]10
+188[.]214[.]135[.]130
+198[.]13[.]158[.]143
+217[.]18[.]55[.]185
+45[.]132[.]114[.]241
+217[.]18[.]55[.]185
+
+Domains:
+ntpsync[.]io
+n0n-cases[.]net
+n0n[.]to
+uberip[.]com
+nongzecboljwv3yfndkggsybsglfrkffw7bvk2zemuteoxe6etpusnad[.]onion
+
+Hashes:
+dc82e9c22c4a06c6bc03701fce2b55f4f490c651
+02923d33715e20cf48580a2138d508f9caed730cc7ef4d0d9a49e401509605c8
+a167d98730cb12904bc6c63d6d7177d16467162b063841d2e7c6e841f3fbdf2c
+274e54a515d5ee3748fa9091b22e44c934c36c4a9afb4391bc934e43b86a630b
+8161292bb577af863ce83f281b9455d7e6746b6e0c64cf6eafb87e5ebdfdc653
+fcbe044ab9dd8e6756346e246eb64d7fda1f1bbc92a49d9bb7331d4d03b10723
+fbac2c74305c3afc7e81859d53d4bd09869598f7295d73aaabc1c8c53e1e8ad6
+37fdd43074644ec16bd125799bcbf889fa3e5b46a86befad00261a2b6d710583
+585e8a65ae549e62bbd665c3d1ae775f7cb3dc6a6c733c682f66a19825452df4
+340172627cdf40927784956be784bd2b3f5d1584cb79cf31064f387bbe9acb28
+886b3608d05069d314fa6300404de6627f96b13a95c5633f6c91dfc2a545ac87
+23cc8eb7ee2a5fb1184d5918fd726af1903effbe841b25c9627ad3ee61cc6006
+6b7a5f29217e429d1050cb028ad5f375dfe880fc23981dfe5c8e2f29d63988a2
+d1fd3a8ac4ada74b8ccbcdf5134797acff401b7fb50e16549b337781dfe1a486
+fffe4911159946ef25dc3cf3dd0fe5a02f078c2d9921df2036efdf49ebd202df
+71c6feeef9ac59d418b2139c421d400f5e0b61a523386fd4d2a802a689f5619b
+ffb2791e0e14ce7490b68b17b47a1e7594c98afbba5dafa3a7f8960865a21f13
+
+BTC Wallets:
+bc1q48vuydq5j8e98lwmt69aqhr5gcu5mn2pc4eqkx
+bc1qe9lq4m7rjgk533u3g3cgf7xs5pn2l8e3l5pfjt
+bc1q98r9gusxzn4st2sr9mxvq7r66ny8dfgtdlgk9h
+bc1q3aw0gz7nnqvfnv9nld686q05lgh2d4yxmzlgcg
+bc1qg7nkelnag2sefg45dgu3ay7xyv3ak3v48fh45h
+bc1q9k3lqn4zfl733pxcwk7erqtdmuw68w80hvru39
+bc1qswvm6d2x8n8mpuz5x2y4wtqpy34xdxe023cw4u
+bc1qyv92sc45cgah5ggwmsppdm323d4jya4rprrqtu
+bc1qcrm6qxz633suda3eacqxkdnx05ztd2mh0y3dxa
+bc1qxktcy6ssugttfr6v5695kzgud9eqw8h7d2r0ss
+bc1qcf8uuvqfnucqt8crr8cgkfjevhvytjahppesem
+bc1q7zlg34wgtdw0dl0tn4gh52vj9nglt77p9necy8
+bc1qyfc9qlsmp6jrq8y4v50ps94qtffwvzejsezsqk
+bc1q78uygtqyjumvh3s7dz75s0ttgsrz4jx5t3wu9n
+bc1q8etz0apvr6tclxxznsss2tk07v46ckxmrjwsde
+bc1qxr2ruep9ast6sz32x7eza7csf49sguqwsnhhaa
+bc1q97y47gkmd4cve9eadws59xz434ag2mntwy7lnv
+bc1qpf72d8lk4caqs3ewej75jasd44umg3juw58asn
+bc1qezgj37g0hr8d29txsnpdjs02lr9kjvhyxzwtkg
+bc1qhavzrsz8y2lqcwp5frckl5fy8exhmacyxz3lcy
+bc1qp2hk3dla0tqus76emls2sppekvurrcd3ghj827
+bc1qqrcegl2a2tkrdln4r6jn2pm9fp84mv60d5y4ug
+bc1qncxk5npnqzp39ns8jv5mj9pr6vx0ekpln2605s
+bc1qsv8yzm09njxmt5khlpyrhnjfupzpd7vykc7e46
+bc1qv6mhllrmzdgl2rk09j7ynuqlgzhfguw0sj77vc
+bc1qpek2637ed7a4f2nff60rrng52fudqsk9l905ra
+bc1q47wp4v8u5myse07mglenk4skssvdj6zfvdrj0l
+bc1q3nswa35s5vax3q3txf3mpy260zad4vyadpfg98
+bc1qh8082ye3dsyhcg8q9mglvr0w80v0gpumd5ndv8
+bc1ql0pdlaga5q3xrznd80mzuzgsv4nuz4fzut7td6
+bc1qpp89qpfmvf9xm6ued5v49e92s47m3mn4vngusw
+bc1qqrvt0ank3y2axmuzxlm2z4879qqxa37nwdafvr
+bc1q030z6k205jz46cyn60jqts9v7xlq895ttd6r9p
+bc1qsclrrwmjnfxzwcmskqlax9htdnc9yd5n99l5ml
+bc1qtkuqkl5h4qekgpvjpkfgapl5fqgzpxdntlwk9c
+bc1qk9s5ngavpwla07w2v3wjwwkt75uj6zmspkxg6p
+bc1qck73xcn7p83emjkgrcpkvujqngnraunu09sc9s
+bc1qx3u3xa7eqkukxuuyr00zq5ynx5ylepw9e4d4ph
+bc1qthtsf88sx3czclzkx73cjxk0u5ep5kqnvhtpt8
+bc1qccgses0q46lpttjtuchnsc2rz28qn9lng67hne
+bc1qp6wyngevq4aycqll3wpc03pf6qwgwcvr3md6ga
+bc1qqc2dy605g0hmcaqfm8ne85dwctfw7603f7a03m
+bc1qldy6h5zlv0aqhyyxwfsra3gqjw694yfj8rtl83
+bc1qmdzpn0d0flf4pswu8ze57e7yyx883lxp55f7f2
+bc1qmfhq8plvqe4cdtypgukq7276jmerdt3gqh33xy
+bc1qpjvl29njpedxhljq0nvvskmxra8p9e8stssegm
+bc1qxed2puty9lmcga2mk6780khqtnlrl5ptsm6t49
+bc1q50x7akwznysr8r3v00p8uzxqztuzg5t2x0tavt
+bc1qfed3fh7f6g8dkmvq7pvrln3f0khf8aut9r2hue
+bc1qmz68h5vyqa9feduhceh34ygmaq3fr3xnau7myf
+bc1qcxqsrfrefgyv6tevuytquq28c4zrftvcflwm96
+bc1q3jgtpksgg5ldhq34z93xqtt39y9kzpkz2674x8
+bc1qt2f08qa3e4wtn0rkscg4flypp3dxy7dhzefa4e
+bc1qgnmfhcppgdynjfwxzrrspxsfr9zgps6ctgkh2z
+bc1q2ua7h64tmywa7xfn4l7f0v868tfte80lgfcmh3
