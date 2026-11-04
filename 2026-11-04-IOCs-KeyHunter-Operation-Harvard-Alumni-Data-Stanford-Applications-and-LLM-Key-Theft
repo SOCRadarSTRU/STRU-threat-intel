@@ -1,0 +1,43 @@
+2026-11-04 - KeyHunter Operation: Harvard Alumni Data, Stanford Applications and LLM Key Theft
+
+Research URL: https://socradar.io/blog/keyhunter-operation-harvard-alumni-stanford-llm-key-data/
+
+Key Points:
+- An open directory at 209[.]112[.]91[.]74:8899 exposed 110 files from the operational workspace of an individual operator tracked as leepsmarts, captured on 2026-09-09; pivoting on tooling, TLS certificates and Telegram bot tokens identified four further servers and a set of operator-controlled domains
+- High-confidence attribution to a single Simplified Chinese-speaking operator (GitHub leepsmarts, Telegram @leepsmartsx, UTC+8): the bot tokens resolve to the same owner, the operator's own shell history pulls their GitHub repository at a pinned commit, and activity continued through 2026-10-13. No state-nexus indicators were identified
+- LLM key theft runs on a FOFA/Shodan-seeded scanner pipeline (three scanners, 50 probe paths, 100 workers) aimed at hosting platforms such as Vercel, Netlify, Railway and Streamlit. The operator's own report counts 2,233 keys harvested and 12 valid as of 2026-07-22; a separate file lists 247 open LLM gateways (223 responding to chat requests) between 2026-08-31 and 2026-09-09
+- AI supports the operation but does not run it: a Hermes Agent cron job monitors new models and free tiers every four hours, an OpenClaw agent executes registration tasks on instruction, and an AI-built dashboard manages keys and proxies. Target selection and fraud decisions remain human-directed
+- Harvard: 195 alumni records (names, alumni-database IDs, personal and alumni e-mail addresses) were processed on 2026-08-16 from a torrent consistent with the November 2025 ShinyHunters incident, and two Harvard institutional accounts were identified for verification
+- Education targeting: payment links for graduate and summer applications at five universities, including Stanford; account-provisioning evidence at about nine institutions, with strength varying by institution; and an eight-script pipeline against the California State University application portal with a reCAPTCHA Enterprise bypass
+- A functional exploit for CVE-2026-41940 (cPanel WHM authentication bypass, CISA KEV) was staged against three university servers with a pre-built SSH persistence key; no execution against those targets was observed in the recovered artifacts
+- Supporting fraud tooling includes a Stripe card checker that relies on stolen sk_live merchant keys and a Telegram bot that captures Harmony ONE seed phrases
+
+IoCs
+
+IP Addresses:
+209[.]112[.]91[.]74
+173[.]231[.]39[.]244
+123[.]60[.]2[.]245
+14[.]47[.]118[.]194
+66[.]42[.]94[.]67
+
+Domains:
+senhai[.]store
+pentagi[.]senhai[.]store
+snap[.]senhai[.]store
+astrdark[.]cyou
+tavily[.]astrdark[.]cyou
+xxtt[.]me
+agent[.]xxtt[.]me
+sajuai[.]xyz
+web[.]712019[.]xyz
+mail2[.]bfvdoor[.]com
+new74[.]osxwrong[.]us[.]com
+vvbin[.]me
+
+Hashes:
+01f26c5be015993e2f0a21fe99056117492ced76944b63dd6afe5eb8ac0f53d0 (SHA-256, stripe_card_checker.py)
+69ab18188a5521ed10e50a7133ed6ce3 (MD5, stripe_card_checker.py)
+
+Vulnerabilities:
+CVE-2026-41940
