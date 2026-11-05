@@ -555,7 +555,7 @@ locatesupport-map[.]site
 location-appleid[.]com
 location-detected-alert[.]info
 location-icloud[.]net
-location-iphones[.]services.z184634-pw8ec.ps02
+location-iphones[.]services
 location-trace-apple[.]com
 locations-us[.]com
 locations[.]connect-login[.]live
