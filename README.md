@@ -3,7 +3,7 @@
 This repository contains indicators of compromise (IOCs) that support and
 accompany the threat research published by **SOCRadar**. Each file gathers
 the indicators referenced in one of our investigations, so defenders can consume
-them directly.
+them for detection and hunting.
 
 Provided "as is" to the public for defensive and research purposes.
 
@@ -22,6 +22,12 @@ Files are named by date and topic:
 Each file includes the indicators, the publication date, and a reference to the
 related investigation.
 
+## Format
+
+Files are plain text. Each one starts with the publication date and a link to the research, followed by indicators grouped by type (URLs, Domains, Hashes, etc.).
+
+Indicators are defanged to prevent accidental clicks, e.g. `https[://]example[.]com` or `example[.]com`. Refang them before ingesting them into your tooling.
+
 ## How to use
 
 - Browse or clone the repository to ingest indicators into your own tooling.
@@ -34,6 +40,10 @@ Attribution to **STRU** or **SOCRadar** is required when redistributing or adapt
 these files: keep the copyright and license notices intact, as required by the
 license. When referencing this work in your own research or tooling, a link back
 to STRU research is appreciated.
+
+## Feedback
+
+Indicators are shared as TLP:CLEAR. To report a false positive or ask a question, open an issue or contact STRU at info@socradar.io
 
 ## Disclaimer
 
