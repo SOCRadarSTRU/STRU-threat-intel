@@ -8,3 +8,6 @@ Key Points
 - How stealer logs and phishing kits supercharge OTP bot success rates
 - Sector focus: Banking, telecom, e-commerce, and crypto platforms
 - Defensive insights: How to harden MFA and train for social engineering threats
+
+IOCs:
+No indicators of compromise were published for this research
