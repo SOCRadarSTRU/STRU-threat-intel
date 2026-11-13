@@ -1,0 +1,85 @@
+2026-11-13 - XaocMail ClickFix Campaign Drops Phantom53 and HavoX Across Latin America, Asia, and Europe
+
+Research URL: https://socradar.io/blog/xaocmail-clickfix-phantom53-havox-america-asia-europe/
+
+Key Points:
+- The STRU identified a multi-stage campaign chaining XaocMail for phishing, Phantom53 for stealthy DNS-over-HTTPS command-and-control, and Havoc for post-exploitation.
+- Campaign preparation began in October 2025, with active phishing and framework development occurring in early 2026 before launching in August 2026.
+- XaocMail generates personalized phishing templates and landing pages that deliver ClickFix lures via Cloudflare Workers and deploy serverless Phantom53 MSI payloads.
+- Phantom53 relies on DNS-over-HTTPS using public resolvers, and it is structured around two components: an ephemeral beacon for initial telemetry and PowerShell payload execution and an on-demand watcher that deploys the Havoc Demon via reflective loading on-demand.
+- Phantom53 also features a week-keyed SHA256 DGA for domain failover resilience.
+- The campaign codebase contains direct evidence of AI-assisted development and automated testing using Claude Code task structures and prompt wrappers.
+- Targeting spans Latin America, Asia, and Europe, with a primary focus on technology, finance, education, government, logistics, and manufacturing sectors.
+
+IoCs
+
+IP Addresses:
+185[.]224[.]132[.]148
+162[.]252[.]198[.]204
+162[.]252[.]199[.]92
+94[.]156[.]152[.]7
+145[.]63[.]138[.]67
+91[.]132[.]93[.]251
+176[.]9[.]154[.]69
+
+Domains:
+dns[.]timesyncserver-312453[.]com
+securedoc[.]makeneg458[.]workers[.]dev
+securedoc[.]mesuttgulerr573[.]workers[.]dev
+linkrot[.]fypahedupal2-0maz[.]workers[.]dev
+cdn-analytics-p53[.]makeneg458[.]workers[.]dev
+cdn-analytics-3f4033[.]rosamariaeadeshtvfud[.]workers[.]dev
+sync-node-serv[.]com
+dns[.]cdn-syncnode-server[.]com
+cdn-assets-api[.]cfchk902834[.]workers[.]dev
+cdn-assets-api[.]makeneg458[.]workers[.]dev
+cdn-assets-api[.]kessler-m88[.]workers[.]dev
+cdn-assets-api[.]busykifukek2-8psk[.]workers[.]dev
+a8f2aac37385[.]xyz
+kfkwrfdd[.]xyz
+544504d7fe1e[.]xyz
+bestutyresdomaonupder[.]com
+bestutyresdomaonupder[.]top
+bestutyresdomaonupder2324[.]com
+
+URLs:
+hxxps[://]securedoc[.]mesuttgulerr573[.]workers.dev/?id=<linkid:8>
+hxxps[://]securedoc[.]mesuttgulerr573[.]workers.dev/m?id=<linkid:8>
+hxxps[://]securedoc[.]mesuttgulerr573[.]workers.dev/s?id=<linkid:8>
+hxxps[://]securedoc[.]mesuttgulerr573[.]workers.dev/h?id=<linkid:8>
+hxxp[://]145[.]63[.]138[.]67:8125/up/
+hxxps[://]linkrot[.]fypahedupal2-0maz[.]workers[.]dev/link?token=7157717581ca4e3dda83e418af25fa448fe98ed2
+hxxps[://]gist[.]githubusercontent[.]com/yegeqebige46-creator/b393f36b20ad8aeadcb8a80af70ccc09/raw/da03fd7f1ffacda970a1f3d345bdaeae8c6a7b43/gistfile1[.]txt
+hxxps[://]github[.]com/yegeqebige46-creator/qq
+hxxps[://]github[.]com/yegeqebige46-creator/qq/raw/main/update[.]zip
+hxxps[://]github[.]com/JohnDow22
+
+Hashes:
+bceeb2d54b6a756c73a3e06617e9e95ad4d8e53da47639bcd6ef3cae98c6da6d
+79a4cb73983a1facb5db09f1a20cec6e58d91a93044a78aa3ba32ab2190284ed
+0e1c94a8f94158f64558325ddbfd1e1277884fba6fb1f8c381dbd5c742e59fbb
+7055483a77f679ad569c3a9bfe76cdb8e5b96efc44d2bf2a6f08e930add598b0
+0dcfe51d2521e52a469f5cec6b42bc8e7e37b41df993cce7d739ff3fd248d8b1
+bd1c005f35e4fd8c61dfa6f20d4c03e082c692e286a3b22dd642369c8d5e3564
+dbd252becd490ac47e16bff4391ab9e6237c4f7e81ab6784c57fa2eed751f477
+e9e57a57ee45b8faae2e47affd8cf3a6d0cc1283802108f7298ae1d2ef3b43f0
+d2d41b249905deae3bd6bcaa547872d747256a7dfa459b509d9db9de8f0ca29b
+ee5fa33b58d0f2772e091e23de9db24908d970000a88e39fd7d908f30f5e591a
+a972797cc1a4161f6e2841142b8cace9b781585f9a71b03aa79a9c051b817491
+47e853092511d9663196e9b36d563a0c3e92ee734f88675c4f375ffcfa5f3db8
+4efe003a54db8ffbaef6065270eacb0a59479ccc86941517ac7a33344e97bc1d
+9a2af4b6d9780e08c86ff35030ee1747ea11460cb1dffc868c48e7af6d626546
+efc4b8c1968c06e598a6f6f98398d44b488198b497291fe30fb792d696b6cb81
+4f656834e545c0b44922ce6d8952989c8c0859d8ae8b1f117c06ab07b047e2b4
+8ebb2bf61b48ae7abdcd674413bebd79b30ddd945854e175ba60d56c0a3adf54
+a4ad001c6900176eba43a747ae5d212db6fc78f7ef4e777f276cbbdf8099dbe8
+dc57638cb90798835848a9dafec228bef7738def50f4f2db612862e07c5b6f8a
+56582934901cce0b618d6a50e54c9db29bf2d444636bcd40b5975a765ecde538
+009099ba10365b44bdb3ecc28dfcbed6a594ec0a0df86931620cdaac9843e611
+0aff424f9a02eb9f429119c4caa05e85fc952603549d69849e745293d20235d6
+
+Email Addresses:
+mesuttgulerr573[@]gmail.com
+rosamariaeadeshtvfud[@]gmail.com
+nepox3k[@]gtuta.io
+yegeqebige46[@]gmail.com
