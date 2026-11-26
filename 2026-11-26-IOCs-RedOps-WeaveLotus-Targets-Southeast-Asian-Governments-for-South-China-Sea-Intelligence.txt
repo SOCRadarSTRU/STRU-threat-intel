@@ -1,0 +1,37 @@
+2026-11-26 - RedOps: WeaveLotus Targets Southeast Asian Governments for South China Sea Intelligence
+
+Research URL: https://socradar.io/blog/redops-weavelotus-southeast-asian-governments/
+
+Key Points:
+- RedOps is a cyber espionage campaign conducted by a Vietnam-sponsored threat actor tracked as WeaveLotus, targeting Southeast Asian government, military, and legislative organizations.
+- Between August and September 2026, the campaign comprised five intrusions in Thailand and the Philippines and reconnaissance against Indonesian government organizations, aiming to collect strategic intelligence on South China Sea defense and military agreements.
+- Initial access was achieved primarily by exploiting web application vulnerabilities and default credentials in open-source software, including GeoServer, JasperReports, osTicket, and exposed Laravel debug mode configurations.
+- The threat actor established persistent internal network access using reverse SSH tunnels and moved laterally into downstream networks and applications.
+- WeaveLotus exfiltrated gigabytes of strategic internal documents, project plans, and credentials.
+- Tracking WeaveLotus as a distinct threat actor is supported by native Vietnamese-language code comments, operational activity aligning with UTC+7 working hours, regional strategic targeting, and custom scripting.
+
+
+IoCs
+
+IP Addresses:
+172[.]235[.]255[.]195
+172[.]235[.]245[.]49
+45[.]61[.]144[.]206
+
+Hashes:
+d8a7dd1961d47068f87ef9c7d5021aec4febce1408bdf83023e5b47efece9ad6
+010d16abdf45a544ae192a4eae1c5d11cfa690a827d7e6ba39e457cc774ee26d
+9ea20d46bb9939382c6c63548890239d0285b0c60b2f63f59f9a667373d5aef9
+935ea9f9f05a086362bec818be1b8a98d635fb864f8baf9820c2c5597e0fa03c
+8ccfca5bb4ef2c83dab0220dfb56d99bfe1e8d34f9e5e1fd7c99ca4f7a3c1eca
+d80ed38f848deb090cebec250721b9d2c6731b87982cae5fdfc1ef2f030e2d23
+05661cacd2e107928f1dfba63d3a631cc3ff506359ae67ddc2214200b3009b4f
+835e644ea7034a7e45db2d8089363b582e49eb99707776e5fc1a920f049b30e2
+cf0bc5f91eb9013123669826e212b9ba2a6c0123bbd3942237a3d1cb7b4cdd93
+b0396c1e8a88004c678b603a92d4bf85d44c04a2f7d381f14fedcd2f5ce428f0
+353209e5fcd0a3a7a48ddd095d416219f37a04520d96a203fdfe85257088dbac
+97630da7a0d17e94ab5db44c1fe6ddd52ac975d8df0d160bfca6102bdb4be265
+c4d6866c4003b92d4f996178198726ca9e702ecbd2c6ce66ee4ea311ffe336be
+67bf04460b177873bf52a5548df9c258f973ae9e41ab25a6fed26ae9b3790cd1
+e7d5e0232799ccbd59890c05d1e2fe0a09308990fbc58380cc1efd87ad611493
+d0ecc8020e9c7e56270ff4c926b926e0a045ebe5bac7007dbff04b1ec9fd5800
